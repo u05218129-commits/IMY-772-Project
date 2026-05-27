@@ -34,3 +34,43 @@
     gap: 20px;
     padding-bottom: 20px;
 }
+
+.export-submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+
+  background: linear-gradient(90deg, #6bb7bd, #8fd3d8);
+  color: #e6f7f8;
+
+  border: none;
+  border-radius: 30px;
+  padding: 6px 25px;
+
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 20px auto 0 auto;
+}
+
+.export-submit-btn .icon {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.export-submit-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.export-submit-btn .icon svg {
+  width: 25px;
+}
