@@ -1,18 +1,13 @@
 import { NavLink } from "react-router-dom";
 import "./Footer.css";
 
-// import AdminLogin from "../pages/AdminLogin";
-
-function Navbar() {
+function Footer() {
   return (
-    <div class="footer-container">
-      <div class="contents">
-        <div class="left">Faculty of natural and agricultural sciences</div>
-        <div class="right">
-          <NavLink
-            to="/admin-login"
-            className={({ isActive }) => (isActive ? "active" : "")}
-          >
+    <div className="footer-container">
+      <div className="contents">
+        <div className="left">Faculty of natural and agricultural sciences</div>
+        <div className="right">
+          <NavLink to="/admin-login" className={({ isActive }) => (isActive ? "active" : "")}>
             <button className="admin-btn">
               <span>ADMIN LOGIN</span>
               <div className="icon">
@@ -39,4 +34,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Footer;
